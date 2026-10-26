@@ -574,3 +574,601 @@
     }
 
 }
+
+/* Clean, comfortable reading style */
+:root {
+    --soft-bg: #111827;
+    --soft-card: #1f2937;
+    --soft-border: #374151;
+    --soft-text: #e5e7eb;
+    --soft-muted: #cbd5e1;
+    --soft-accent: #67c5d5;
+}
+
+/* Generated AI answers */
+.ai-answer {
+    color: #e5e7eb !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.1px !important;
+    overflow-wrap: anywhere;
+}
+
+/* Answer headings */
+.ai-answer h1,
+.ai-answer h2,
+.ai-answer h3,
+.ai-answer h4 {
+    color: #f3f4f6 !important;
+    line-height: 1.5 !important;
+    margin-top: 18px !important;
+    margin-bottom: 10px !important;
+}
+
+/* Answer paragraphs and lists */
+.ai-answer p,
+.ai-answer li {
+    color: #e5e7eb !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Softer cards */
+.analytics-insight-card,
+.analytics-metric,
+.analytics-daily-item {
+    background: #182334 !important;
+    border: 1px solid #3b4b60 !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Softer blue and teal buttons */
+.tts-controls button {
+    background: #286779 !important;
+    border: 1px solid #528b99 !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    border-radius: 9px !important;
+}
+
+.tts-controls button:hover {
+    background: #327c8e !important;
+}
+
+/* More readable supporting text */
+.analytics-insight-subtitle,
+.analytics-list-item span,
+.analytics-empty {
+    color: #d1dbe8 !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+/* Softer teal highlights */
+.analytics-daily-date {
+    color: #80d6df !important;
+}
+
+a {
+    color: #8bd5e1;
+}
+
+/* =====================================================
+   NEURAL KNOWLEDGE HUB — COOL, CLEAR COLOR THEME
+   Frontend only. Paste at the END of style.css
+   ===================================================== */
+
+:root {
+    --cool-bg: #0b1220;
+    --cool-panel: #111c2d;
+    --cool-panel-light: #17263a;
+    --cool-border: #34465e;
+    --cool-text: #f1f5f9;
+    --cool-muted: #c0ccdc;
+    --cool-teal: #67d5d0;
+    --cool-blue: #83b7ff;
+}
+
+/* Main background: remove muddy purple/pink blending */
+html,
+body {
+    background: #0b1220 !important;
+    color: var(--cool-text) !important;
+}
+
+/* Main page background effects */
+body::before,
+body::after {
+    opacity: 0.12 !important;
+}
+
+/* Main hero/banner */
+.hero,
+.hero-section,
+.hero-banner,
+header.hero,
+[class*="hero"] {
+    background: linear-gradient(
+        135deg,
+        #14243a 0%,
+        #101b2d 55%,
+        #102b38 100%
+    ) !important;
+    border-color: #34465e !important;
+    color: var(--cool-text) !important;
+}
+
+/* Main headline */
+.hero h1,
+.hero-section h1,
+.hero-banner h1,
+[class*="hero"] h1 {
+    color: #f8fafc !important;
+    line-height: 1.2 !important;
+}
+
+/* Gradient words: teal and light blue instead of neon pink */
+.hero h1 span,
+.hero-section h1 span,
+.hero-banner h1 span,
+[class*="hero"] h1 span {
+    background: linear-gradient(
+        90deg,
+        #67d5d0,
+        #83b7ff
+    ) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Hero description — readable against the background */
+.hero p,
+.hero-section p,
+.hero-banner p,
+[class*="hero"] p {
+    color: #d1dbea !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+/* Module cards */
+.module-card,
+.card,
+[class*="module"] {
+    background: #111c2d !important;
+    border: 1px solid #34465e !important;
+    color: #f1f5f9 !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Card headings */
+.module-card h2,
+.module-card h3,
+.card h2,
+.card h3,
+[class*="module"] h2,
+[class*="module"] h3 {
+    color: #f1f5f9 !important;
+    font-size: 21px !important;
+    line-height: 1.45 !important;
+}
+
+/* All normal descriptions and supporting text */
+.module-card p,
+.card p,
+[class*="module"] p {
+    color: #c0ccdc !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+}
+
+/* Small labels: make them visible but not neon */
+[class*="eyebrow"],
+[class*="subtitle"],
+[class*="label"] {
+    color: #a9c5dc;
+}
+
+/* Upload area */
+.upload-area,
+.drop-zone,
+[class*="upload"] {
+    border-color: #42627c !important;
+}
+
+/* Input fields and query box */
+input,
+textarea,
+select {
+    background: #0b1422 !important;
+    color: #f1f5f9 !important;
+    border: 1px solid #3b506b !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    border-radius: 10px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aebed1 !important;
+    opacity: 1 !important;
+}
+
+/* Buttons: soft teal-blue */
+button {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.tts-controls button,
+button[type="submit"] {
+    background: linear-gradient(
+        135deg,
+        #246579,
+        #315c91
+    ) !important;
+    color: #ffffff !important;
+    border: 1px solid #56869c !important;
+    border-radius: 9px !important;
+}
+
+.tts-controls button:hover,
+button[type="submit"]:hover {
+    background: linear-gradient(
+        135deg,
+        #2c7a8b,
+        #3a6eaa
+    ) !important;
+}
+
+/* AI answer text */
+.ai-answer,
+.answer,
+.response,
+[class*="answer-content"],
+[class*="response-content"] {
+    color: #e5edf7 !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+    overflow-wrap: anywhere;
+}
+
+/* Analytics panels */
+.analytics-insight-card,
+.analytics-metric,
+.analytics-daily-item {
+    background: #142136 !important;
+    border: 1px solid #3b506b !important;
+    color: #f1f5f9 !important;
+}
+
+.analytics-insight-card h3 {
+    color: #f1f5f9 !important;
+    font-size: 20px !important;
+}
+
+.analytics-insight-subtitle,
+.analytics-list-item span {
+    color: #d1dbea !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+}
+
+.analytics-metric-label {
+    color: #c0ccdc !important;
+    font-size: 13px !important;
+}
+
+.analytics-metric-value {
+    color: #f8fafc !important;
+    font-size: 27px !important;
+}
+
+.analytics-daily-date {
+    color: #80ddd8 !important;
+}
+
+/* Keyboard focus */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible {
+    outline: 3px solid #80ddd8 !important;
+    outline-offset: 3px !important;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .hero h1,
+    .hero-section h1,
+    .hero-banner h1,
+    [class*="hero"] h1 {
+        font-size: clamp(30px, 8vw, 44px) !important;
+    }
+
+    .module-card h2,
+    .module-card h3,
+    .card h2,
+    .card h3 {
+        font-size: 19px !important;
+    }
+
+    .ai-answer,
+    .answer,
+    .response {
+        font-size: 15px !important;
+    }
+}
+
+/* =========================================
+   ANALYTICS TABLE — CLEAR & READABLE
+   Paste at the END of frontend/style.css
+   ========================================= */
+
+/* Table overall */
+.analytics-table,
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 14px !important;
+    color: #e5edf7 !important;
+}
+
+/* Table headings */
+.analytics-table thead th,
+table thead th {
+    background: #18263a !important;
+    color: #c5d8ed !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.4px !important;
+    padding: 13px 12px !important;
+    text-align: left !important;
+    border-bottom: 1px solid #3b506b !important;
+}
+
+/* Table content */
+.analytics-table tbody td,
+table tbody td {
+    color: #e5edf7 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+    padding: 12px !important;
+    border-bottom: 1px solid #293b52 !important;
+    vertical-align: middle !important;
+}
+
+/* Alternate row backgrounds */
+.analytics-table tbody tr:nth-child(odd),
+table tbody tr:nth-child(odd) {
+    background: #142136 !important;
+}
+
+.analytics-table tbody tr:nth-child(even),
+table tbody tr:nth-child(even) {
+    background: #17263a !important;
+}
+
+/* Subtle hover highlight */
+.analytics-table tbody tr:hover,
+table tbody tr:hover {
+    background: #20354b !important;
+}
+
+/* Status labels */
+.analytics-table .badge,
+table .badge {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+}
+
+/* Keep query text readable */
+.analytics-table td:nth-child(2),
+table td:nth-child(2) {
+    min-width: 220px;
+    overflow-wrap: anywhere;
+}
+
+/* Analytics summary cards */
+.analytics-metric-label {
+    color: #c5d3e5 !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.analytics-metric-value {
+    color: #f1f5f9 !important;
+    font-size: 28px !important;
+    line-height: 1.4 !important;
+}
+
+/* Smaller screens: allow horizontal scrolling */
+.analytics-table-wrapper {
+    width: 100% !important;
+    overflow-x: auto !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .analytics-table thead th,
+    table thead th {
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+
+    .analytics-table tbody td,
+    table tbody td {
+        font-size: 13px !important;
+        padding: 10px !important;
+    }
+}
+
+/* FORCE LARGER FONT SIZE IN ALL ANALYTICS CARDS */
+
+/* Analytics headings */
+.analytics-insight-card h3 {
+    font-size: 23px !important;
+    line-height: 1.5 !important;
+}
+
+/* Descriptions under headings */
+.analytics-insight-card .analytics-insight-subtitle {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    color: #d1dbea !important;
+}
+
+/* Query types, domains and common user queries */
+.analytics-insight-card .analytics-list-item span {
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    color: #f1f5f9 !important;
+}
+
+.analytics-insight-card .analytics-list-item strong {
+    font-size: 16px !important;
+    min-width: 38px !important;
+    padding: 7px 11px !important;
+}
+
+/* Daily activity dates */
+.analytics-insight-card .analytics-daily-date {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+}
+
+/* Daily activity count labels */
+.analytics-insight-card .analytics-daily-stats span {
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+    padding: 7px 10px !important;
+}
+
+/* Performance metric labels and values */
+.analytics-insight-card .analytics-metric-label {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+.analytics-insight-card .analytics-metric-value {
+    font-size: 30px !important;
+    line-height: 1.4 !important;
+}
+
+/* Analytics table */
+.analytics-insights table th,
+.analytics-insights table thead th {
+    font-size: 15px !important;
+    padding: 15px !important;
+}
+
+.analytics-insights table td,
+.analytics-insights table tbody td {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    padding: 15px !important;
+}
+
+/* Knowledge gap section */
+#knowledgeGaps p,
+.knowledge-gap-section p {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+}
+
+/* Refresh button and analytics filters */
+.analytics-insights button,
+.analytics-insight-card button {
+    font-size: 15px !important;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .analytics-insight-card h3 {
+        font-size: 20px !important;
+    }
+
+    .analytics-insight-card .analytics-list-item span {
+        font-size: 15px !important;
+    }
+
+    .analytics-insights table td {
+        font-size: 14px !important;
+    }
+}
+
+/* ============================================
+   KNOWLEDGE GAP DETECTION — FONT SIZE UPDATE
+   ============================================ */
+
+/* Knowledge gap section text */
+#knowledgeGaps,
+#knowledgeGaps * {
+    line-height: 1.8 !important;
+}
+
+/* Main knowledge gap heading */
+#knowledgeGaps h2,
+#knowledgeGaps h3 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #f1f5f9 !important;
+}
+
+/* Introductory description */
+#knowledgeGaps > p,
+#knowledgeGaps p {
+    font-size: 18px !important;
+    line-height: 1.9 !important;
+    color: #d5dfec !important;
+    margin-bottom: 14px !important;
+}
+
+/* Individual unanswered query items */
+#knowledgeGaps li,
+#knowledgeGaps ul li,
+#knowledgeGaps ol li {
+    font-size: 17px !important;
+    line-height: 1.9 !important;
+    color: #e5edf7 !important;
+    margin-bottom: 12px !important;
+}
+
+/* Query text and occurrence details */
+#knowledgeGaps li span,
+#knowledgeGaps li strong,
+#knowledgeGaps li small,
+#knowledgeGaps li div {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+/* Links and labels inside knowledge gaps */
+#knowledgeGaps a,
+#knowledgeGaps label {
+    font-size: 16px !important;
+    color: #8bd5e1 !important;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+    #knowledgeGaps h2,
+    #knowledgeGaps h3 {
+        font-size: 21px !important;
+    }
+
+    #knowledgeGaps p {
+        font-size: 16px !important;
+    }
+
+    #knowledgeGaps li {
+        font-size: 15px !important;
+    }
+}
